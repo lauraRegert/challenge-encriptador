@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="bases.css"/>
+    <link rel="stylesheet" href="header.css"/>
+    <link rel="stylesheet" href="/main-css/text-area.css"/>
+    <link rel="stylesheet" href="/main-css/mensaje.css"/>
+    <link rel="stylesheet" href="/main-css/botones.css"/>
+    <link rel="stylesheet" href="/main-css/informacion.css"/>
+    <link rel="stylesheet" href="footer-css/footer.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/Logo.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <h2 class="texto1">No se encontró ningún mensaje</h2>
+                <h2 class="texto2">Ingrese un texto para encriptar o <br> desencriptar</h2>
+                <button class="btn-copiar" onclick="copyContent()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <p class="text-footer">Copyright © 2023 - Laura Mariel Regert - Alura Latam </p>
+    </footer>
+    <script src="/script/script.js"></script>
+</body>
+</html>
